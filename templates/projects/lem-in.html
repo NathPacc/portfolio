@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lem In</title>
+  <link rel="stylesheet" href="../../static/styles/main.css" />
+</head>
+<body>
+  <section class="right-panel">
+    <a href="../index.html" class="home">Accueil</a>
+    <div class="illustration-large">
+      <img class="image-large" src="../../static/assets/lem-in-big.png">
+    </div>
+    <div class="details">
+      <div class="general"><b>Description générale</b><br><br>
+        <p>
+        Ce projet algorithmique, réalisé dans le cadre de l’école Zone01, consiste à simuler le déplacement optimal de fourmis dans un réseau de salles interconnectées. À partir d’un graphe orienté représentant les connexions entre les salles, l’objectif est de faire transiter un nombre donné de fourmis du point de départ vers le point d’arrivée en un minimum de tours, tout en respectant des contraintes de collision et de simultanéité.  
+        <br><br>
+        Le projet met en œuvre des algorithmes de parsing, de recherche de chemins (BFS, DFS, ou variantes optimisées), de gestion de flux, et de synchronisation des déplacements. Il illustre des problématiques classiques en théorie des graphes, comme la détection de chemins disjoints, la répartition de charge, et la minimisation de temps de parcours.
+        </p>
+      </div>
+      <div class="right-column">
+        <div class="experiences"><b>Exemples / Expériences</b><br><br>
+          <p>Plusieurs configurations de graphes ont été testées pour valider la robustesse de l’algorithme :  
+              <br><br>
+              <ul> 
+                <li>Des graphes simples avec un seul chemin direct, permettant de vérifier la logique de base.  </li>
+                <li>Des graphes complexes avec des embranchements, des impasses, et des chemins parallèles, pour tester la capacité à répartir les fourmis intelligemment.  </li>
+                <li>Des cas limites avec des cycles, des salles isolées ou des goulots d’étranglement, afin d’évaluer la gestion des exceptions et la stabilité du système.</li>
+              </ul>
+              <br><br>
+              Chaque simulation affiche le nombre de tours nécessaires, les mouvements de chaque fourmi, et une visualisation dynamique du graphe en cours d’exécution.
+              </p>
+
+        </div>
+        <div class="code-desc"><b>Description du code</b><br><br>
+          <p>
+Le code est structuré en plusieurs modules :  
+<br><br>
+  <ul>
+    <li>Un parser qui lit et valide la structure du graphe à partir d’un fichier d’entrée.  </li>
+    <li>Un moteur de recherche de chemins, basé sur des algorithmes de parcours en largeur ou en profondeur, capable de détecter des ensembles de chemins non conflictuels.</li>  
+    <li>Un répartiteur de fourmis, qui attribue les chemins en fonction de leur longueur et du nombre total de fourmis, afin d’optimiser le flux.</li>  
+    <li>Un simulateur de mouvement, qui gère les déplacements tour par tour, en évitant les collisions et en respectant les contraintes de simultanéité.</li> 
+  </ul> 
+<br><br>
+Le projet met l’accent sur l’efficacité algorithmique, la clarté du code, et la modularité des composants.
+</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Nathan PACCOUD - Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

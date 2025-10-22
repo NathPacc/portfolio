@@ -1,0 +1,130 @@
+:root {
+  --bg-main: #2b2b2b;
+  --bg-card: #3c3c3c;
+  --text-main: #e0e0e0;
+  --accent: #5a8ca3;
+  --accent-hover: #4a7b91;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --radius: 8px;
+  --font-main: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  position: relative;
+}
+
+/* Bouton Accueil en haut à gauche */
+.home {
+  position: absolute;
+  top: 10px; /* décalé du haut */
+  left: -10px;
+  z-index: 10;
+  height: 35px;
+  padding: 8px 14px;
+  background-color: #5a8ca3; /* bleu-gris doux */
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  line-height: 1; 
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet de brillance */
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transform: skewX(-20deg);
+  transition: left 0.4s ease;
+}
+
+.home:hover::after {
+  left: 100%;
+}
+
+.home:hover {
+  background-color: var(--accent-hover);
+}
+
+/* En-tête */
+.skills-header {
+  padding: 80px 20px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Sections de compétences */
+.skills-section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+.skills-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.skills-section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Animation d’apparition */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 40px 0 20px;
+}
