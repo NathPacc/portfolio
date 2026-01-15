@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathan PACCOUD - Apprenti Développeur Full Stack</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+      <div class="container">
+        <a href="#home" id="logo" class="nav-link">Nathan PACCOUD</a>
+        <ul>
+          <li><a href="#home" class="nav-link">Accueil</a></li>
+          <li><a href="#projects" class="nav-link">Projets</a></li>
+          <li><a href="#about" class="nav-link">À propos</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/nathan-paccoud-96032936b"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/NathPacc" target="_blank">GitHub</a>
+          </li>
+          <li><a href="assets/CV.pdf" download>CV</a></li>
+        </ul>
+        <p id="mail"><b>nathpacc@gmail.com</b></p>
+      </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="main-content">
+      <section id="home">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Nathan PACCOUD</h1>
+              <p class="subtitle">Apprenti Développeur Full Stack</p>
+              <p>
+                Apprenti passionné par la création de programmes en tout genres,
+                disposant d'une experience fullstack en Golang, Java et Python.
+              </p>
+              <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#about" class="btn btn-secondary">En savoir plus</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="floating-card">
+                <div class="tech-icon">🐹</div>
+                <div>Golang</div>
+              </div>
+              <div class="floating-card">
+                <div class="tech-icon">☕</div>
+                <div>Java</div>
+              </div>
+              <div class="floating-card">
+                <div class="tech-icon">🐍</div>
+                <div>Python</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title">Mes Projets</h2>
+          <div class="carousel-container">
+            <div class="carousel">
+              <!-- PROJECT 1 -->
+              <div class="project-card" data-project="1">
+                <div class="project-image">
+                  <img src="assets/images/tetris-optimizer.png" />
+                </div>
+                <div class="project-content">
+                  <h3>Tetris Optimizer</h3>
+                  <div class="project-tags">
+                    <span class="tag">Algorithmie</span>
+                    <span class="tag">Backtracking</span>
+                    <span class="tag">Golang</span>
+                  </div>
+                  <p>
+                    Réussir à faire rentrer les valises dans le coffre au départ
+                    des vacances, quelle galère... Mais Tetris Optimizer est là
+                    pour vous : un programme qui place vos pièces de tetris dans
+                    le plus petit carré possible !
+                  </p>
+                  <button class="btn-details">Page à venir</button>
+                </div>
+              </div>
+
+              <!-- PROJECT 2 -->
+              <div class="project-card" data-project="2">
+                <div class="project-image">
+                  <img src="assets/images/lem-in.png" />
+                </div>
+                <div class="project-content">
+                  <h3>Lem-In</h3>
+                  <div class="project-tags">
+                    <span class="tag">Pathfinding</span>
+                    <span class="tag">Optimisation</span>
+                    <span class="tag">Golang</span>
+                  </div>
+                  <p>
+                    Contrairement à la cigale, ne vous perdez pas dans la
+                    fourmillère ! Lem-In est un programme permettant de
+                    déterminer les mouvements optimaux pour faire passer un
+                    certain nombre de fourmis à travers un réseau de tunnels !
+                  </p>
+                  <button class="btn-details">Voir les détails</button>
+                </div>
+              </div>
+
+              <!-- PROJECT 3 -->
+              <div class="project-card" data-project="3">
+                <div class="project-image">
+                  <img src="assets/images/groupie-tracker.png" />
+                </div>
+                <div class="project-content">
+                  <h3>Groupie Tracker</h3>
+                  <div class="project-tags">
+                    <span class="tag">Web</span>
+                    <span class="tag">UI</span>
+                    <span class="tag">Golang</span>
+                  </div>
+                  <p>
+                    Est-ce un oiseau ? Un avion ? Non, c'est votre célébrité
+                    favorite : Superman ! Retrouvez vos stars préférées et leurs
+                    lieux et dates de concert sur le site Groupie Tracker !
+                  </p>
+                  <button class="btn-details">Page à venir</button>
+                </div>
+              </div>
+
+              <!-- PROJECT 4 -->
+              <div class="project-card" data-project="4">
+                <div class="project-image">
+                  <img src="assets/images/forum.png" />
+                </div>
+                <div class="project-content">
+                  <h3>Forum</h3>
+                  <div class="project-tags">
+                    <span class="tag">Web</span>
+                    <span class="tag">Base de Données</span>
+                    <span class="tag">Golang</span>
+                  </div>
+                  <p>
+                    Un espace de discussion parfaitement adapté pour discuter de
+                    nos projets et de tout ce qui fonctionne (ou non) dedans.
+                  </p>
+                  <button class="btn-details">Page à venir</button>
+                </div>
+              </div>
+
+              <!-- PROJECT 5 -->
+              <div class="project-card" data-project="5">
+                <div class="project-image">
+                  <img src="assets/images/pn.png" />
+                </div>
+                <div class="project-content">
+                  <h3>PN : Deadline Invaders</h3>
+                  <div class="project-tags">
+                    <span class="tag">Game Design</span>
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">Javascript</span>
+                  </div>
+                  <p>
+                    Qui n'a jamais eu un collègue compliqué ? Dans PN : Deadline
+                    Invaders, battez vous pour mener à bien vos projets et
+                    défendre votre réputation !
+                  </p>
+                  <button class="btn-details">Voir les détails</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn prev">←</button>
+              <button class="carousel-btn next">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title">À propos de moi</h2>
+          <div class="about-content">
+            <h2>Qui suis-je ?</h2>
+            <p>
+              Je suis un étudiant développeur full stack formé au sein de
+              l'école Zone01. J'aime créer des solutions élégantes et efficaces
+              qui résolvent de vrais problèmes.
+            </p>
+            <p>
+              Mon parcours m'a permis de travailler sur des projets
+              collaboratifs variés, de la résolutions de problèmes mathématiques
+              demandant un algorithme complexe à la création d'un site web et de
+              son interface. Je suis toujours à la recherche de nouveaux défis
+              et d'opportunités pour apprendre.
+            </p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem">
+              Compétences principales
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">Golang</div>
+              <div class="skill-item">Java</div>
+              <div class="skill-item">Python</div>
+              <div class="skill-item">SQLite</div>
+              <div class="skill-item">Algorithmie</div>
+              <div class="skill-item">Docker</div>
+              <div class="skill-item">Git</div>
+            </div>
+            <h2>Mon parcours</h2>
+            <p>
+              Initialement formé en mathématiques, j’ai choisi de me réorienter
+              après l’obtention de ma licence afin de me consacrer au
+              développement logiciel. Cette transition m’a conduit vers une
+              formation Full Stack, structurée autour de projets collaboratifs
+              mêlant algorithmie, développement web, et architecture technique.
+              Le parcours inclut également des spécialisations au choix,
+              permettant d’approfondir des domaines comme la cybersécurité, le
+              DevOps, ou encore l’intelligence artificielle.
+            </p>
+            <h2>Philosophie de développement</h2>
+            <p>
+              Pour moi, le développement est avant tout un travail d’équipe.
+              J’accorde une grande importance à la clarté du code, à sa
+              structure, et à sa capacité à être réutilisé et compris par tous.
+              Chaque projet est une opportunité de construire des fondations
+              solides, où les choix techniques servent autant la maintenabilité
+              que la collaboration. J’aime concevoir des architectures lisibles,
+              modulaires et cohérentes, qui facilitent les échanges, les
+              évolutions, et le plaisir de coder ensemble.
+            </p>
+            <h2>Ce que je recherche</h2>
+            <p>
+              Travailler avec des collaborateurs curieuses, exigeantes et
+              ouvertes. Continuer à apprendre, à affiner mes outils, et à
+              construire des choses qui ont du sens.
+            </p>
+            <h2>Mes valeurs personnelles</h2>
+            <p>
+              Au-delà du code, je place l’humain au cœur de mon parcours. Le
+              respect, la bienveillance et l’entraide sont pour moi des piliers
+              essentiels, tant dans le travail d’équipe que dans la vie
+              quotidienne. Sensible aux enjeux sociaux, je m’investis
+              bénévolement dans des associations comme les Restos du Cœur et des
+              associations de lutte contre les discriminations, où je contribue
+              à des actions solidaires et inclusives. Ces engagements
+              nourrissent ma vision du développement : créer des outils utiles,
+              accessibles, et porteurs de sens.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PROJECT DETAIL PAGES -->
+    <div id="project-1" class="project-detail">
+      <div class="container">
+        <a href="#projects" class="back-btn">← Retour aux projets</a>
+        <div class="project-header">
+          <h1>Tetris Optimizer</h1>
+          <div class="project-tags">
+            <span class="tag">Algorithmie</span>
+            <span class="tag">Backtracking</span>
+            <span class="tag">Golang</span>
+          </div>
+        </div>
+        <div class="project-detail-content">
+          <div class="project-detail-image">
+            <img src="assets/images/tetris-optimizer-big.png" />
+          </div>
+
+          <div class="detail-section">
+            <h3>Vue d'ensemble</h3>
+            <p></p>
+          </div>
+          <div class="detail-section">
+            <h3>Captures d'écran</h3>
+            <div class="screenshots-gallery">
+              <div class="screenshot-item">
+                <img
+                  src="assets/images/screenshots/tetris-optimizer/result.png"
+                  alt="Screenshot 1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <a
+              href="https://github.com/NathPacc/tetris-optimizer"
+              class="btn btn-primary"
+              target="_blank"
+              >Voir le code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-2" class="project-detail">
+      <div class="container">
+        <a href="#projects" class="back-btn">← Retour aux projets</a>
+        <div class="project-header">
+          <h1>Lem-In</h1>
+          <div class="project-tags">
+            <span class="tag">Pathfinding</span>
+            <span class="tag">Optimisation</span>
+            <span class="tag">Golang</span>
+          </div>
+        </div>
+        <div class="project-detail-content">
+          <div class="project-detail-image"></div>
+          <div class="detail-section">
+            <h3>Vue d'ensemble</h3>
+            <p>
+              Dans Lem-In, l'objectif est de faire passer un nombre défini de
+              fourmis à travers une fourmillière le plus rapidement possible.
+              Les données (nombre de fourmis et agencement de la fourmillère)
+              sont transmises à travers un document texte que le logiciel doit
+              interpréter. Il doit ainsi vérifier que les données sont
+              correcter, puis proposer une résolution pour permettre à
+              l'ensemble des fourmis d'atteindre la dernière salle, sachant
+              qu'il ne peut pas y avoir plus d'une fourmi par salle à la fin de
+              chaque tour. L'option "visualizer" a été ajouté au projet, offrant
+              une animation représentant le mouvement des fourmis.
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3>Technologies utilisées</h3>
+            <p>
+              Le projet est réalisé uniquement avec les packages natifs de Go, à
+              l'exception du package ebiten utilisé pour l'option "visualizer".
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3>Fonctionnalités principales</h3>
+            <p>
+              • Vérification et interprétation du fichier de données : Le
+              programme vérifie que le fichier de données ait un format
+              compatible et interprète son contenu pour enregistrer les
+              informations nécessaires en structures go.
+            </p>
+            <p>
+              • Algorithme : Le programme dispose d'une algorithme permettant de
+              déterminer, pour une colonie données, le parcours idéal pour que X
+              fourmis atteignent le plus rapidement possible la sortie. Le
+              résultat est transmis sous forme de texte dans le terminal.
+            </p>
+            <p>
+              • Animation : Avec l'utilisation de l'option "visualizer", une
+              animation se lance permettant de voir le déplacement des fourmis.
+            </p>
+          </div>
+          <div class="detail-section">
+            <a
+              href="https://github.com/NathPacc/lem-in"
+              class="btn btn-primary"
+              target="_blank"
+              >Voir le code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-3" class="project-detail">
+      <div class="container">
+        <a href="#projects" class="back-btn">← Retour aux projets</a>
+        <div class="project-header">
+          <h1>Groupie Tracker</h1>
+          <div class="project-tags">
+            <span class="tag">Web</span>
+            <span class="tag">UI</span>
+            <span class="tag">Golang</span>
+          </div>
+        </div>
+        <div class="project-detail-content">
+          <div class="project-detail-image"></div>
+          <div class="detail-section">
+            <h3>Vue d'ensemble</h3>
+            <p></p>
+          </div>
+          <div class="detail-section">
+            <a
+              href="https://github.com/MDDiallo9/groupie-tracker"
+              class="btn btn-primary"
+              target="_blank"
+              >Voir le code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-4" class="project-detail">
+      <div class="container">
+        <a href="#projects" class="back-btn">← Retour aux projets</a>
+        <div class="project-header">
+          <h1>Forum</h1>
+          <div class="project-tags">
+            <span class="tag">Web</span>
+            <span class="tag">Base de Données</span>
+            <span class="tag">Golang</span>
+          </div>
+        </div>
+        <div class="project-detail-content">
+          <div class="project-detail-image"></div>
+          <div class="detail-section">
+            <h3>Vue d'ensemble</h3>
+            <p></p>
+          </div>
+          <div class="detail-section">
+            <a
+              href="https://github.com/votre-projet-4"
+              class="btn btn-primary"
+              target="_blank"
+              >Voir le code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-5" class="project-detail">
+      <div class="container">
+        <a href="#projects" class="back-btn">← Retour aux projets</a>
+        <div class="project-header">
+          <h1>Project Nightmare : Deadline Invaders</h1>
+          <div class="project-tags">
+            <span class="tag">Game Design</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Javascript</span>
+          </div>
+        </div>
+        <div class="project-detail-content">
+          <div class="project-detail-image">
+            <img src="assets/images/pn-big.png" />
+          </div>
+
+          <div class="detail-section">
+            <h3>Vue d'ensemble</h3>
+            <p>
+              Project Nightmare : Deadline Invaders est un jeu web inspiré de
+              Space Invaders, mais présentant tout de même une petite touche
+              d'innovation et d'originalité. Le jeu dispose de deux modes : le
+              histoire, qui propose de courtes cinématiques pour donner du
+              contexte ainsi que la possibilité de nommé le "collègue relou",
+              parfait pour se défoulé après été témoins de conflits sur le lieu
+              de travail, et le mode sans-fin, pour un peu plus de challenge. Ce
+              projet a été réalisé dans le cadre de ma formation au sein de
+              l'école Zone01 et répond à un cahier des charges précis.
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3>Technologies utilisées</h3>
+            <p>
+              Le projet est réalisé uniquement en HTML, CSS et Javascript. Le
+              cahier des charges interdisait strictement l'utilisation de canvas
+              ou de framework. Les musiques sont des musiques libres de droits
+              disponibles sur internet, les personnages et cinématiques ont été
+              créer par nous même.
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3>Fonctionnalités principales</h3>
+            <p>
+              • Déplacements et tirs : Le joueur contrôle un employé qui doit
+              envoyer son travail à ses collègues tout en évitant le collègue
+              difficile. Il se déplace de gauche à droite et "tire" son travail
+              vers ses collègues.
+            </p>
+            <p>
+              • Timer : En mode histoire, le joueur dispose de 60 secondes pour
+              terminer le niveau.
+            </p>
+            <p>
+              • Power-Ups : Le joueur dispose d'une liste de Power-Ups
+              prédéfinie, chacun présentant un avantage pour la complétion du
+              niveau.
+            </p>
+            <p>
+              • Pause : Le joueur peut mettre le jeu en pause et le reprendre à
+              tout moment.
+            </p>
+          </div>
+          <div class="detail-section">
+            <h3>Résultats</h3>
+            <p>
+              Les retours ont été très positifs. Toutes les personnes ayant eu
+              l'occasion de tester le jeu ont trouvé l'idée originale et
+              amusante et non eu aucun mal à déterminer quel nom choisir pour le
+              collègue. Cela prouve que le jeu répond à une demande existante !
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3>Captures d'écran</h3>
+            <div class="screenshots-gallery">
+              <div class="screenshot-item">
+                <img
+                  src="assets/images/screenshots/pn/main-menu.png"
+                  alt="Screenshot 1"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="assets/images/screenshots/pn/team-selection.png"
+                  alt="Screenshot 2"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="assets/images/screenshots/pn/cutscene.png"
+                  alt="Screenshot 3"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="assets/images/screenshots/pn/naming-relou.png"
+                  alt="Screenshot 4"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="assets/images/screenshots/pn/party.png"
+                  alt="Screenshot 5"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="assets/images/screenshots/pn/rules.png"
+                  alt="Screenshot 6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <a
+              href="https://github.com/NathPacc/"
+              class="btn btn-primary"
+              target="_blank"
+              >Bientôt disponible</a
+            >
+            <a
+              href="https://votre-projet-demo.com"
+              class="btn btn-secondary"
+              target="_blank"
+              >Bientôt disponible</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 PACCOUD Nathan. Tous droits réservés.</p>
+        <p>
+          nathpacc@gmail.com |
+          <a class="contact-btn" href="https://github.com/NathPacc">GitHub</a> |
+          <a
+            class="contact-btn"
+            href="https://www.linkedin.com/in/nathan-paccoud-96032936b"
+            >Linkedin</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
