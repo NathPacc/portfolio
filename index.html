@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -345,44 +345,51 @@
           <div class="detail-section">
             <h3>Vue d'ensemble</h3>
             <p>
-              Dans Lem-In, l'objectif est de faire passer un nombre défini de
-              fourmis à travers une fourmillière le plus rapidement possible.
-              Les données (nombre de fourmis et agencement de la fourmillère)
-              sont transmises à travers un document texte que le logiciel doit
-              interpréter. Il doit ainsi vérifier que les données sont
-              correcter, puis proposer une résolution pour permettre à
-              l'ensemble des fourmis d'atteindre la dernière salle, sachant
-              qu'il ne peut pas y avoir plus d'une fourmi par salle à la fin de
-              chaque tour. L'option "visualizer" a été ajouté au projet, offrant
-              une animation représentant le mouvement des fourmis.
+              Lem-In est un projet d'optimisation algorithmique dont l'objectif
+              est de faire traverser une colonie de fourmis à travers un réseau
+              de salles le plus rapidement possible. Le logiciel reçoit en
+              entrée un fichier texte décrivant le nombre de fourmis et
+              l'agencement de la fourmilière. Après avoir validé l'intégrité des
+              données, le programme calcule le cheminement optimal pour
+              acheminer l'ensemble des fourmis vers la sortie, en respectant la
+              contrainte critique : une salle ne peut contenir qu'une seule
+              fourmi par tour. Une option "visualizer" a été intégrée pour
+              offrir une représentation graphique et animée du mouvement des
+              fourmis.
             </p>
           </div>
 
           <div class="detail-section">
             <h3>Technologies utilisées</h3>
             <p>
-              Le projet est réalisé uniquement avec les packages natifs de Go, à
-              l'exception du package ebiten utilisé pour l'option "visualizer".
+              Le projet a été développé en Go (Golang), en utilisant
+              exclusivement la bibliothèque standard pour la partie logique et
+              algorithmique. Pour la partie graphique, la bibliothèque
+              <strong>Ebitengine</strong> (Ebiten) a été exploitée afin de
+              réaliser l'outil de visualisation.
             </p>
           </div>
 
           <div class="detail-section">
             <h3>Fonctionnalités principales</h3>
             <p>
-              • Vérification et interprétation du fichier de données : Le
-              programme vérifie que le fichier de données ait un format
-              compatible et interprète son contenu pour enregistrer les
-              informations nécessaires en structures go.
+              • <strong>Parsing et validation :</strong> Analyse syntaxique
+              rigoureuse du fichier de données pour garantir un format
+              compatible et conversion des informations en structures de données
+              Go optimisées.
             </p>
             <p>
-              • Algorithme : Le programme dispose d'une algorithme permettant de
-              déterminer, pour une colonie données, le parcours idéal pour que X
-              fourmis atteignent le plus rapidement possible la sortie. Le
-              résultat est transmis sous forme de texte dans le terminal.
+              • <strong>Algorithme d'optimisation :</strong> Implémentation d'un
+              algorithme de recherche de chemins maison, permettant de
+              déterminer les trajectoires parallèles idéales pour minimiser le
+              nombre de tours total. Les instructions de mouvement sont affichée
+              en fin de programme dans le terminal.
             </p>
             <p>
-              • Animation : Avec l'utilisation de l'option "visualizer", une
-              animation se lance permettant de voir le déplacement des fourmis.
+              • <strong>Visualisation dynamique :</strong> Intégration d'une
+              fenêtre graphique permettant d'observer en temps réel le
+              déplacement des fourmis à travers la colonie, facilitant ainsi la
+              compréhension de la solution proposée.
             </p>
           </div>
           <div class="detail-section">
@@ -474,58 +481,62 @@
           <div class="detail-section">
             <h3>Vue d'ensemble</h3>
             <p>
-              Project Nightmare : Deadline Invaders est un jeu web inspiré de
-              Space Invaders, mais présentant tout de même une petite touche
-              d'innovation et d'originalité. Le jeu dispose de deux modes : le
-              histoire, qui propose de courtes cinématiques pour donner du
-              contexte ainsi que la possibilité de nommé le "collègue relou",
-              parfait pour se défoulé après été témoins de conflits sur le lieu
-              de travail, et le mode sans-fin, pour un peu plus de challenge. Ce
-              projet a été réalisé dans le cadre de ma formation au sein de
-              l'école Zone01 et répond à un cahier des charges précis.
+              Project Nightmare : Deadline Invaders est un jeu web inspiré du
+              classique Space Invaders, revisité avec une touche d'originalité
+              et d'humour. Le jeu propose deux modes : le mode Histoire, qui
+              intègre de courtes cinématiques pour contextualiser l'aventure et
+              permet de nommer le "collègue relou", parfait pour se défouler
+              après été témoin de conflits sur le lieu de travail, et le mode
+              sans-fin, pour un peu plus de challenge. et le mode Sans-fin, axé
+              sur le challenge et le score. Ce projet a été réalisé dans le
+              cadre de ma formation au sein de l'école Zone01, en réponse à un
+              cahier des charges technique rigoureux.
             </p>
           </div>
 
           <div class="detail-section">
             <h3>Technologies utilisées</h3>
             <p>
-              Le projet est réalisé uniquement en HTML, CSS et Javascript. Le
-              cahier des charges interdisait strictement l'utilisation de canvas
-              ou de framework. Les musiques sont des musiques libres de droits
-              disponibles sur internet, les personnages et cinématiques ont été
-              créer par nous même.
+              Le projet a été développé exclusivement en HTML, CSS et JavaScript
+              pur. Le cahier des charges interdisait strictement l'utilisation
+              de l'élément Canvas ou de frameworks, imposant une gestion directe
+              du DOM pour les animations. Les musiques sont libres de droits,
+              tandis que le design des personnages et les cinématiques ont été
+              intégralement créés par notre équipe.
             </p>
           </div>
 
           <div class="detail-section">
             <h3>Fonctionnalités principales</h3>
             <p>
-              • Déplacements et tirs : Le joueur contrôle un employé qui doit
-              envoyer son travail à ses collègues tout en évitant le collègue
-              difficile. Il se déplace de gauche à droite et "tire" son travail
-              vers ses collègues.
+              • <strong>Déplacements et tirs :</strong> Le joueur incarne un
+              employé qui doit transmettre ses dossiers à ses collègues tout en
+              évitant les interruptions du collègue difficile. Les mécaniques
+              incluent le déplacement latéral et le "tir" de travail.
+            </p>
+
+            <p>
+              • <strong>Timer :</strong> En mode Histoire, le joueur dispose de
+              60 secondes pour accomplir ses objectifs et terminer le niveau.
             </p>
             <p>
-              • Timer : En mode histoire, le joueur dispose de 60 secondes pour
-              terminer le niveau.
+              • <strong>Power-Ups :</strong> Le joueur dispose d'une liste de
+              Power-Ups prédéfinie, chacun présentant un avantage pour la
+              complétion du niveau.
             </p>
             <p>
-              • Power-Ups : Le joueur dispose d'une liste de Power-Ups
-              prédéfinie, chacun présentant un avantage pour la complétion du
-              niveau.
-            </p>
-            <p>
-              • Pause : Le joueur peut mettre le jeu en pause et le reprendre à
-              tout moment.
+              • <strong>Pause :</strong> Le joueur peut mettre le jeu en pause
+              et le reprendre à tout moment.
             </p>
           </div>
           <div class="detail-section">
             <h3>Résultats</h3>
             <p>
-              Les retours ont été très positifs. Toutes les personnes ayant eu
-              l'occasion de tester le jeu ont trouvé l'idée originale et
-              amusante et non eu aucun mal à déterminer quel nom choisir pour le
-              collègue. Cela prouve que le jeu répond à une demande existante !
+              Les retours ont été extrêmement positifs. Les testeurs ont salué
+              l'originalité du concept et l'aspect divertissant de la
+              personnalisation de l'antagoniste. La sélection du nom à, en
+              particulier, beaucoup inspiré nos testeurs. Cela prouve que le jeu
+              répond à une demande existante !
             </p>
           </div>
 
